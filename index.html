@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ff1493);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 20px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4; }
+      to { text-shadow: 0 0 20px #ff1493, 0 0 30px #ff69b4; }
+    }
+
+    .wish {
+      margin: 30px auto;
+      max-width: 700px;
+      font-size: 1.5rem;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 20px;
+      font-family: 'Pacifico', cursive;
+      white-space: pre-line;
+      overflow: hidden;
+      border-right: .15em solid white;
+      animation: typing 6s steps(60, end), blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white; }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 10px;
+    }
+    .polaroid {
+      background: white;
+      padding: 10px 10px 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      width: 180px;
+      transform: scale(0.9);
+      opacity: 0;
+      animation: fadeZoomIn 1s forwards;
+      position: relative;
+      color: black;
+      font-family: 'Poppins', sans-serif;
+    }
+    .polaroid img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    .caption {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+    .polaroid:nth-child(1) { animation-delay: 0.3s; }
+    .polaroid:nth-child(2) { animation-delay: 0.8s; }
+    .polaroid:nth-child(3) { animation-delay: 1.3s; }
+    .polaroid:nth-child(4) { animation-delay: 1.8s; }
+    .polaroid:nth-child(5) { animation-delay: 2.3s; }
+    .polaroid:nth-child(6) { animation-delay: 2.8s; }
+
+    @keyframes fadeZoomIn {
+      from { opacity: 0; transform: scale(0.8) rotate(-5deg); }
+      to { opacity: 1; transform: scale(1) rotate(0deg); }
+    }
+
+    .music {
+      margin-top: 30px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 1rem;
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    @media(max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      .wish { font-size: 1.1rem; padding: 15px; }
+      .polaroid { width: 140px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Wishing you a very veryy happy birthdayy dear SWASTII 🎀❤️</h1>
+
+  <div class="wish">
+    May god fill your this new year with lots of love, laughter and true friendss...
+    May you be surrounded by all small and big reasons of happiness and lots of success in your life..
+
+    Kaafi english likh di naa maine 😂 hainaaa.. but anyways joke sapat — on this special birthday, special because you are no longer a teen hehe 🎂
+
+    As a gift for now I can just give A PROMISE that I will never break your trust and will always be there for you in all your ups and downs ❤️
+
+    With lots of love and support,  
+    Tumharaa Param Mitra 💖  
+    — Syon Sharmaa
+  </div>
+
+  <div class="gallery">
+    <div class="polaroid"><img src="pic1.jpg" alt="Memory 1"><div class="caption">Vlogger</div></div>
+    <div class="polaroid"><img src="pic2.jpg" alt="Memory 2"><div class="caption">Smaart</div></div>
+    <div class="polaroid"><img src="pic3.jpg" alt="Memory 3"><div class="caption">Piiyaariii</div></div>
+    <div class="polaroid"><img src="pic4.jpg" alt="Memory 4"><div class="caption">Adorable</div></div>
+    <div class="polaroid"><img src="pic5.jpg" alt="Memory 5"><div class="caption">Serial killer</div></div>
+    <div class="polaroid"><img src="pic6.jpg" alt="Memory 6"><div class="caption">Fashion streakk</div></div>
+  </div>
+
+  <div class="music">
+    <h2>🎶 A Song for You 🎶</h2>
+    <audio id="bg-music" controls autoplay loop>
+      <source src="birthday-song.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <footer>
+    Made with ❤️ for my bestie
+  </footer>
+</body>
+</html>
